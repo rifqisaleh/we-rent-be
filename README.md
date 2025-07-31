@@ -1,34 +1,14 @@
-# ✅ We Rent! Backend 
+#  We Rent! Backend 
 
 This branch adds full unit testing support for the `AuthService` logic, complete with isolated test configuration and mocks. These tests are safe to run and will not interfere with the local PostgreSQL or production data.
 
-## ✅ Summary of Changes
+<br><br>
 
-- Added unit tests for `AuthService` including:
-  - `register_user`: success, username taken, email taken
-  - `login_user`: success, wrong password, user not found
-- Configured test environment in `conftest.py` using:
-  - In-memory SQLite
-  - Flask-JWT-Extended
-  - Flask-Bcrypt
-  - Proper app context injection
-- Used `pytest` and `pytest-mock` for full mocking
-- Ensured that real DB or token behavior is not triggered
+## 🛠️ Project Overview
 
-## ✅ How to Run Tests
+The We Rent! backend is a RESTful API service built with Flask, designed to support the core functionalities of the We Rent! application. It manages user authentication, product listings, product details, reviews, and other business logic required for the rental platform.
 
-```bash
-pip install -r requirements.txt
-pytest -v
-```
-
----
-
-# ℹ️ About This Project
-
-## We Rent! Backend
-
-This is the backend repository for the We Rent! application.
+<br><br>
 
 ## 🔗 Project Links
 
@@ -38,11 +18,7 @@ This is the backend repository for the We Rent! application.
 - **Frontend Repository:** [Frontend GitHub Repository](https://github.com/rizalandyyy/frontend-team-two)
 - **Frontend Deployment (Netlify):** [Netlify Deployment Link](https://your-frontend-site.netlify.app)
 
----
-
-## 🛠️ Project Overview
-
-The We Rent! backend is a RESTful API service built with Flask, designed to support the core functionalities of the We Rent! application. It manages user authentication, product listings, product details, reviews, and other business logic required for the rental platform.
+<br><br>
 
 ## 🗂 Codebase Structure
 
@@ -56,3 +32,30 @@ The We Rent! backend is a RESTful API service built with Flask, designed to supp
 - `migrations/`: Database migration scripts managed by Flask-Migrate.
 - `tests/`: Unit and integration tests to ensure code quality and correctness.
 - `instance/`: Contains instance-specific files such as the database initialization.
+
+<br><br>
+
+##  Summary of Changes
+
+- Added unit tests for `AuthService` including:
+  - `register_user`: success, username taken, email taken
+  - `login_user`: success, wrong password, user not found
+- Configured test environment in `conftest.py` using:
+  - In-memory SQLite
+  - Flask-JWT-Extended
+  - Flask-Bcrypt
+  - Proper app context injection
+- Used `pytest` and `pytest-mock` for full mocking
+- Ensured that real DB or token behavior is not triggered
+
+<br><br>
+
+##  How to Run Tests
+
+```bash
+pip install -r requirements.txt
+pytest -v
+```
+
+---
+
